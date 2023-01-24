@@ -1,0 +1,176 @@
+/************** BUILD STYLES START ***************/ 
+.build{
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background-color: $build-section-bg-color;
+    background-image: url("../../images/build-bg.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 760px) bottom;
+    
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__wrapper--start{
+        width: 100%;
+        max-width: 445px;
+    }
+    
+    &__title{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        color: #fff;        
+        
+        &::before{
+            display: block;
+            width: 50px;
+            height: 4px;
+            margin-bottom: 54px;
+            background-color: $main-subtitle-color;
+            content: "";
+        }
+    }
+    
+    &__list{
+        width: 100%;
+        max-width: 540px;
+        padding-top: 54px;
+        @include list-unstyled;
+    }
+    
+    &__item:not(:last-child){
+        margin-bottom: 32px;
+    }
+    
+    &__item{
+        position: relative;
+        padding-left: 95px;
+        &::before{
+            position: absolute;
+            left: 0;
+            display: inline-block;
+            content: url("../../images/person.svg");
+        }
+        
+        &:nth-child(2)::before{
+            content: url("../../images/setting.svg");
+        }
+        
+        &:nth-child(3)::before{
+            content: url("../../images/treyd.svg");
+        }
+    }
+    
+    &__item--title{
+        margin-top: 0;
+        margin-bottom: 16px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        color: $main-subtitle-color;
+        
+    }
+    
+    &__item--text{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        color: #fff;
+        opacity: 0.8;
+    }
+}
+/************* TABLET RESPONSIBLE START*******************/
+@media only screen and (max-width: 768px) {
+    .build{
+        padding: 154px 97px 100px 97px;
+        background-position: calc(50% + 390px) top;
+        &__wrapper{
+            
+            display: flex;
+            flex-direction: column;
+        }
+        
+        
+    } 
+} 
+/************* TABLET RESPONSIBLE END*******************/ 
+/************* MOBILE RESPONSIBLE START0******************/
+@media only screen and (max-width: 560px) {
+    .build{
+        padding-top: 100px;
+        padding-bottom: 60px;
+        padding-right: 0;
+        padding-left: 0;
+        background-image: url("../../images/build-bg.png");
+        background-position: calc(50% + 280px) top;
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        &__wrapper--start{
+            width: 100%;
+            max-width: 240px;
+        }
+        &__title{
+            font-size: 32px;
+            line-height: 32px;
+            font-weight: 700;
+        }
+        &__list{
+            display: block;
+            text-align: center;
+            align-items: center;
+        }
+        &__item{
+            text-align: center;
+            align-items: center;
+            width: 100%;
+            max-width: 327px;
+            padding-left: 0px;
+            margin-right: auto;
+            margin-left: auto;
+            
+            &::before{
+                display: none;
+                content: url("../../images/person.svg");
+            } 
+        }
+        &__item--title{
+            &::before{
+                display: block;
+                align-items: center;
+                text-align: center;
+                content: url(../../images/person.svg);
+            }
+            &:nth-child(2)::before{
+                content: url(../../images/setting.svg);
+            }
+            &:last-child::before{
+                content: url(../../images/treyd.svg);
+            }
+
+
+        }
+        
+        
+        &__item--text{
+            width: 100%;
+            max-width: 327px;
+            font-size: 15px;
+            line-height: 25px;
+            font-weight: 600;
+        }
+    }
+}
+
+
+/************* MOBILE RESPONSIBLE END*******************/ 
+
+/************** BUILD STYLES END ***************/
