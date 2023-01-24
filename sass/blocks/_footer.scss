@@ -1,0 +1,139 @@
+.footer{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: $footer-bg-color;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__logo--link{
+        display: block;
+        margin-bottom:25px;
+
+    }
+    &__link{
+        @include link-unstyled;
+        display: inline-block;
+        margin-right: 40px;
+        line-height: 28px;
+        font-weight: 600;
+        color: #FFFFFF;
+        &:active{
+            color: $main-subtitle-color;
+        }
+    }
+    &__wrapper--midle{
+        width: 100%;
+        max-width: 445px;
+        text-align: left;
+    }
+    &__deck{
+        margin-top: 3px;
+        margin-bottom: 3px;
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 600;
+        color: #FFFFFF;
+        opacity: 0.6;
+    }
+    &__wrapper--link{
+        @include link-unstyled;
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 600;
+        color: #FFFFFF;
+        opacity: 0.6;
+        
+
+    }
+    &__address{
+        margin-top: 48px;
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 600;     
+        text-align: right;       
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.6;
+    }
+    &__icons{
+        display: inline-block;
+        margin-right: 16px;
+        &:active{
+            color: $main-subtitle-color;
+        }
+    }
+    
+}
+/****************RESPONSIVE TABLET START***********/
+@media only screen and(max-width: 768px) {
+    .footer{
+        padding-top: 56px;
+        padding-bottom: 96px;
+        position: relative;
+        &__wrapper--midle{
+            position: absolute;
+            top: 40px;
+            right: 50px;
+            width: 100%;
+            max-width: 180px;
+            text-align: right;
+        }
+        &__address{
+            position:absolute;
+            top: 130px;
+            right: 50px;
+        }
+        &__wrapper{
+                display: flex-wrap;
+                
+        }
+    }
+    .box{
+        position: absolute;
+        top: 180px;
+        left:20px
+    }
+    
+} 
+/****************RESPONSIVE TABLET END*************/ 
+/****************RESPONSIVE MOBIL START*************/
+@media only screen and(max-width: 560px) {
+    .footer{
+    padding-top: 65px;
+    padding-bottom: 265px;
+    position: relative;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        position: none;
+    }
+    &__wrapper--start{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    &__wrapper--midle{
+        display: block;
+        top: 170px;
+        right: 150px; ;
+        left: calc(30% + 0px);
+        width: 100%;
+        max-width: 180px;
+        text-align: center;
+        position: absolute;
+    }
+    &__address{
+        position:absolute;
+        top: calc(50% + 90px);
+        right: calc(10% +  20px);
+    }
+} 
+}
+.box{
+    position: absolute;
+    top: calc(50% + 110px);
+    left:calc(40% + 0px)
+}
+
+/****************RESPONSIVE MOBIL END*************/ 
