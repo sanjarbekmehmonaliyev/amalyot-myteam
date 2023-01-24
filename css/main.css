@@ -961,4 +961,94 @@ img {
   }
 }
 /*********** DELIVER  MOBIL RESPOSIBLE END*********/
-/************ DELIVER STYLES END *************//*# sourceMappingURL=main.css.map */
+/************ DELIVER STYLES END *************/
+.ready {
+  background-color: #F67E7E;
+  padding-top: 76px;
+  padding-bottom: 76px;
+  background-image: url(../../images/ready.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% - 655px);
+}
+.ready__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.ready__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 48px;
+  line-height: 48px;
+  color: #012F34;
+  font-weight: 700;
+}
+.ready__wrapper--btn {
+  text-decoration: none;
+  padding: 10px 32px;
+  border: 2px solid #012F34;
+  border-radius: 24px;
+}
+.ready__wrapper--btn:active {
+  background: #012F34;
+  color: #ffffff;
+}
+.ready__btn {
+  text-decoration: none;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #012F34;
+}
+.ready__btn:active {
+  color: #ffffff;
+}
+
+/*********RESPONSIVE TABLET START**********/
+@media only screen and (max-width: 768px) {
+  .ready {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    padding-left: 77px;
+    padding-right: 78px;
+    background-image: url(../../images/ready.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% - 285px) calc(50% + 120px);
+  }
+  .ready__title {
+    width: 100%;
+    max-width: 336px;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #012F36;
+  }
+}
+/******* RESPONSIVE MOBIL START*****/
+@media only screen and (max-width: 560px) {
+  .ready {
+    padding-top: 83px;
+    padding-bottom: 83px;
+    background-position: calc(50% - 165px) calc(50% + 175px);
+  }
+  .ready__wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .ready__title {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 327px;
+    margin-bottom: 33px;
+  }
+  .ready__wrapper--btn {
+    width: 100%;
+    max-width: 155px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/************ RESONSIVE MOBIL END******/
+/*********RESPONSIVE TABLET EEND**********//*# sourceMappingURL=main.css.map */
