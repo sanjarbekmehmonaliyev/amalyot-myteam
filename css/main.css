@@ -684,4 +684,158 @@ img {
   }
 }
 /********** HERO MOBILE STYLES END **********/
-/************* HERO STYLES END *************//*# sourceMappingURL=main.css.map */
+/************* HERO STYLES END *************/
+/************** BUILD STYLES START ***************/
+.build {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color: #012F34;
+  background-image: url("../../images/build-bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 760px) bottom;
+}
+.build__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.build__wrapper--start {
+  width: 100%;
+  max-width: 445px;
+}
+.build__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #fff;
+}
+.build__title::before {
+  display: block;
+  width: 50px;
+  height: 4px;
+  margin-bottom: 54px;
+  background-color: #F67E7E;
+  content: "";
+}
+.build__list {
+  width: 100%;
+  max-width: 540px;
+  padding-top: 54px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.build__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.build__item {
+  position: relative;
+  padding-left: 95px;
+}
+.build__item::before {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  content: url("../../images/person.svg");
+}
+.build__item:nth-child(2)::before {
+  content: url("../../images/setting.svg");
+}
+.build__item:nth-child(3)::before {
+  content: url("../../images/treyd.svg");
+}
+.build__item--title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #F67E7E;
+}
+.build__item--text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+/************* TABLET RESPONSIBLE START*******************/
+@media only screen and (max-width: 768px) {
+  .build {
+    padding: 154px 97px 100px 97px;
+    background-position: calc(50% + 390px) top;
+  }
+  .build__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/************* TABLET RESPONSIBLE END*******************/
+/************* MOBILE RESPONSIBLE START0******************/
+@media only screen and (max-width: 560px) {
+  .build {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    padding-right: 0;
+    padding-left: 0;
+    background-image: url("../../images/build-bg.png");
+    background-position: calc(50% + 280px) top;
+  }
+  .build__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .build__wrapper--start {
+    width: 100%;
+    max-width: 240px;
+  }
+  .build__title {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+  .build__list {
+    display: block;
+    text-align: center;
+    align-items: center;
+  }
+  .build__item {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 327px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .build__item::before {
+    display: none;
+    content: url("../../images/person.svg");
+  }
+  .build__item--title::before {
+    display: block;
+    align-items: center;
+    text-align: center;
+    content: url(../../images/person.svg);
+  }
+  .build__item--title:nth-child(2)::before {
+    content: url(../../images/setting.svg);
+  }
+  .build__item--title:last-child::before {
+    content: url(../../images/treyd.svg);
+  }
+  .build__item--text {
+    width: 100%;
+    max-width: 327px;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+  }
+}
+/************* MOBILE RESPONSIBLE END*******************/
+/************** BUILD STYLES END ***************//*# sourceMappingURL=main.css.map */
