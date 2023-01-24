@@ -1,0 +1,97 @@
+.ready{
+    background-color: $main-subtitle-color;
+    padding-top: 76px ;
+    padding-bottom: 76px;
+    background-image: url(../../images/ready.svg);
+    background-repeat: no-repeat;
+    background-position: calc( 50% - 655px);
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title{
+        margin-top: 0;
+        margin-bottom:0;
+        font-size: 48px;
+        line-height: 48px;
+        color: #012F34;
+        font-weight: 700;
+        
+    }
+    &__wrapper--btn{
+        @include link-unstyled;
+        padding: 10px 32px;
+        border: 2px solid  #012F34;
+        border-radius: 24px;
+      
+        &:active{
+            background: #012F34;
+            color:#ffffff ;
+        }
+    }
+    &__btn{
+        @include link-unstyled;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 28px;          
+        font-weight: 600;
+        color: #012F34;
+        &:active{
+            color:#ffffff ;
+        }
+    }
+}
+/*********RESPONSIVE TABLET START**********/
+@media only screen  and (max-width: 768px){
+    .ready{
+        padding-top: 84px;
+        padding-bottom: 84px;
+        padding-left: 77px;
+        padding-right: 78px;
+        background-image: url(../../images/ready.svg);
+        background-repeat: no-repeat;
+        background-position: calc( 50% - 285px) calc( 50% + 120px);
+
+        &__title{
+            width: 100%;
+            max-width: 336px;
+            font-size: 32px;
+            line-height: 32px;
+            font-weight: 700;
+            color: #012F36
+
+        }
+
+
+    }
+}  
+/******* RESPONSIVE MOBIL START*****/ 
+@media only screen and (max-width: 560px){
+    .ready{
+        padding-top:83px;
+        padding-bottom:83px;
+        background-position: calc( 50% - 165px) calc( 50% + 175px);
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+           
+        }
+        &__title{
+            margin-right: auto;
+            margin-left: auto;
+            width: 100%;
+            max-width: 327px;
+            margin-bottom:33px;
+           
+        }
+        &__wrapper--btn{
+            width: 100%;
+            max-width: 155px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}
+/************ RESONSIVE MOBIL END******/ 
+/*********RESPONSIVE TABLET EEND**********/ 
